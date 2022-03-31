@@ -1,13 +1,18 @@
 #pragma once
 
-class Board
+class Board3x3
 {
+public :
 	virtual void display();
 	virtual bool check_grid_valid();
 	virtual bool check_grid_full();
 	virtual void reset_game();
 
-	virtual bool getHorizontal();
-	virtual bool getDiagonal();
-	virtual bool getVertical();
+	virtual void setValue();
+	virtual char getValue();
+
+
+	virtual char getHorizontal();
+	virtual char getDiagonal();
+	virtual char getVertical();
 };
